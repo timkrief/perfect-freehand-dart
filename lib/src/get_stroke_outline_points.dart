@@ -115,11 +115,6 @@ List<Offset> getStrokeOutlinePoints(
     final distance = points[i].distance;
     final runningLength = points[i].runningLength;
 
-    // Removes noise from the end of the line
-    if (i < points.length - 1 && totalLength - runningLength < options.size) {
-      continue;
-    }
-
     /**
      * Calculate the radius
      * 
